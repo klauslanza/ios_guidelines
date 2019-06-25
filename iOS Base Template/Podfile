@@ -1,0 +1,13 @@
+platform :ios, '10.0'
+
+target 'iOS Base Template' do
+  	use_frameworks!
+  	inhibit_all_warnings!
+  	
+  	# iOS Base Template
+  	pod 'SwiftLint'
+  	pod 'Kingfisher'
+  	pod 'DeviceKit'
+  	pod 'KeychainAccess'
+
+end
