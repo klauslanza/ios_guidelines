@@ -13,6 +13,12 @@
 		B16860DA22C1F39B0059434A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860D822C1F39B0059434A /* Main.storyboard */; };
 		B16860DC22C1F39E0059434A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16860DB22C1F39E0059434A /* Assets.xcassets */; };
 		B16860DF22C1F39E0059434A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860DD22C1F39E0059434A /* LaunchScreen.storyboard */; };
+		B16860EC22C1FB1D0059434A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16860D622C1F39B0059434A /* ViewController.swift */; };
+		B16860ED22C1FB1D0059434A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16860D422C1F39B0059434A /* AppDelegate.swift */; };
+		B16860EF22C1FB1D0059434A /* Pods_iOS_Base_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83BECDB871C846B09177D0E /* Pods_iOS_Base_Template.framework */; };
+		B16860F122C1FB1D0059434A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860DD22C1F39E0059434A /* LaunchScreen.storyboard */; };
+		B16860F222C1FB1D0059434A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16860DB22C1F39E0059434A /* Assets.xcassets */; };
+		B16860F322C1FB1D0059434A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860D822C1F39B0059434A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,8 @@
 		B16860DB22C1F39E0059434A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B16860DE22C1F39E0059434A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B16860E022C1F39E0059434A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16860F822C1FB1D0059434A /* iOS Base Template Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Base Template Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16860FC22C1FCC40059434A /* Stage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Stage-Info.plist"; sourceTree = "<group>"; };
 		B92447EBDD6E8BF81E5F9305 /* Pods-iOS Base Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Base Template.release.xcconfig"; path = "Target Support Files/Pods-iOS Base Template/Pods-iOS Base Template.release.xcconfig"; sourceTree = "<group>"; };
 		C83BECDB871C846B09177D0E /* Pods_iOS_Base_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Base_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -34,6 +42,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD91CFD179CB8F2E41987E6 /* Pods_iOS_Base_Template.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16860EE22C1FB1D0059434A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16860EF22C1FB1D0059434A /* Pods_iOS_Base_Template.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				B16860D122C1F39B0059434A /* iOS Base Template.app */,
+				B16860F822C1FB1D0059434A /* iOS Base Template Stage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,14 +87,31 @@
 		B16860D322C1F39B0059434A /* iOS Base Template */ = {
 			isa = PBXGroup;
 			children = (
-				B16860D422C1F39B0059434A /* AppDelegate.swift */,
+				B16860FA22C1FB380059434A /* Application */,
+				B16860FB22C1FB3D0059434A /* Resources */,
 				B16860D622C1F39B0059434A /* ViewController.swift */,
 				B16860D822C1F39B0059434A /* Main.storyboard */,
-				B16860DB22C1F39E0059434A /* Assets.xcassets */,
-				B16860DD22C1F39E0059434A /* LaunchScreen.storyboard */,
-				B16860E022C1F39E0059434A /* Info.plist */,
 			);
 			path = "iOS Base Template";
+			sourceTree = "<group>";
+		};
+		B16860FA22C1FB380059434A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B16860D422C1F39B0059434A /* AppDelegate.swift */,
+				B16860E022C1F39E0059434A /* Info.plist */,
+				B16860FC22C1FCC40059434A /* Stage-Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B16860FB22C1FB3D0059434A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B16860DB22C1F39E0059434A /* Assets.xcassets */,
+				B16860DD22C1F39E0059434A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CE2A457BF54DD11CB284211C /* Frameworks */ = {
@@ -111,6 +145,26 @@
 			productReference = B16860D122C1F39B0059434A /* iOS Base Template.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B16860E822C1FB1D0059434A /* iOS Base Template Stage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B16860F522C1FB1D0059434A /* Build configuration list for PBXNativeTarget "iOS Base Template Stage" */;
+			buildPhases = (
+				B16860E922C1FB1D0059434A /* [CP] Check Pods Manifest.lock */,
+				B16860EA22C1FB1D0059434A /* SwiftLint */,
+				B16860EB22C1FB1D0059434A /* Sources */,
+				B16860EE22C1FB1D0059434A /* Frameworks */,
+				B16860F022C1FB1D0059434A /* Resources */,
+				B16860F422C1FB1D0059434A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Base Template Stage";
+			productName = "iOS Base Template";
+			productReference = B16860F822C1FB1D0059434A /* iOS Base Template Stage.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				B16860D022C1F39B0059434A /* iOS Base Template */,
+				B16860E822C1FB1D0059434A /* iOS Base Template Stage */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +207,16 @@
 				B16860DF22C1F39E0059434A /* LaunchScreen.storyboard in Resources */,
 				B16860DC22C1F39E0059434A /* Assets.xcassets in Resources */,
 				B16860DA22C1F39B0059434A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16860F022C1FB1D0059434A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16860F122C1FB1D0059434A /* LaunchScreen.storyboard in Resources */,
+				B16860F222C1FB1D0059434A /* Assets.xcassets in Resources */,
+				B16860F322C1FB1D0059434A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +240,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		B16860E922C1FB1D0059434A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Base Template-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16860EA22C1FB1D0059434A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		B16860F422C1FB1D0059434A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Base Template/Pods-iOS Base Template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Base Template/Pods-iOS Base Template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Base Template/Pods-iOS Base Template-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		DCC922D3BA932C81E44BB583 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -224,6 +346,15 @@
 			files = (
 				B16860D722C1F39B0059434A /* ViewController.swift in Sources */,
 				B16860D522C1F39B0059434A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16860EB22C1FB1D0059434A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16860EC22C1FB1D0059434A /* ViewController.swift in Sources */,
+				B16860ED22C1FB1D0059434A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +503,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XU68D9ZRUQ;
-				INFOPLIST_FILE = "iOS Base Template/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Base Template/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +522,45 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XU68D9ZRUQ;
-				INFOPLIST_FILE = "iOS Base Template/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Base Template/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.klauslanza.iOS-Base-Template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B16860F622C1FB1D0059434A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE6ECE29292ECF7ED7B8B60 /* Pods-iOS Base Template.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XU68D9ZRUQ;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Base Template/Application/Stage-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it.klauslanza.iOS-Base-Template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B16860F722C1FB1D0059434A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92447EBDD6E8BF81E5F9305 /* Pods-iOS Base Template.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XU68D9ZRUQ;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Base Template/Application/Stage-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -420,6 +589,15 @@
 			buildConfigurations = (
 				B16860E422C1F39E0059434A /* Debug */,
 				B16860E522C1F39E0059434A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B16860F522C1FB1D0059434A /* Build configuration list for PBXNativeTarget "iOS Base Template Stage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B16860F622C1FB1D0059434A /* Debug */,
+				B16860F722C1FB1D0059434A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
