@@ -1,0 +1,51 @@
+platform :ios, '10.0'
+
+use_frameworks!
+inhibit_all_warnings!
+
+workspace 'Bootstrap.xcworkspace'
+
+project 'Bootstrap.xcodeproj'
+project 'BootstrapCore/BootstrapCore.xcodeproj'
+project 'BootstrapShared/BootstrapShared.xcodeproj'
+
+def common_pods
+  # Main
+  pod 'SwiftLint'
+  pod 'Kingfisher'
+  pod 'DeviceKit'
+  pod 'KeychainAccess'
+end
+
+# --------------
+# Bootstrap app
+# --------------
+target 'Bootstrap' do
+  inherit! :search_paths
+  project 'Bootstrap.xcodeproj'
+  common_pods
+end
+
+target 'Bootstrap Stage' do
+  inherit! :search_paths
+  project 'Bootstrap.xcodeproj'
+  common_pods
+end
+
+# --------------
+# BootstrapCore
+# --------------
+target 'BootstrapCore' do
+  inherit! :search_paths
+  project 'BootstrapCore/BootstrapCore.xcodeproj'
+  common_pods
+end
+
+# --------------
+# BootstrapShared
+# --------------
+target 'BootstrapShared' do
+  inherit! :search_paths
+  project 'BootstrapShared/BootstrapShared.xcodeproj'
+  common_pods
+end

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Bootstrap Stage/Pods-Bootstrap Stage-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework
+${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework

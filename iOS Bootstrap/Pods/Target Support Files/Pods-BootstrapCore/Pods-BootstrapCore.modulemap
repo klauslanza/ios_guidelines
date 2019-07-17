@@ -1,0 +1,6 @@
+framework module Pods_BootstrapCore {
+  umbrella header "Pods-BootstrapCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
