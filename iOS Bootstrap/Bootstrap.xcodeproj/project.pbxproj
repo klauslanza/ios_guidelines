@@ -20,21 +20,8 @@
 		B16860F222C1FB1D0059434A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16860DB22C1F39E0059434A /* Assets.xcassets */; };
 		B16860F322C1FB1D0059434A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860D822C1F39B0059434A /* Main.storyboard */; };
 		B16AD5FB22DF37BA00C58EA7 /* BootstrapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5FA22DF37BA00C58EA7 /* BootstrapCore.framework */; };
-		B16AD5FD22DF37BA00C58EA7 /* BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5FC22DF37BA00C58EA7 /* BootstrapShared.framework */; };
+		B16AD60022DF38BE00C58EA7 /* BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5FC22DF37BA00C58EA7 /* BootstrapShared.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B16AD5F122DF352E00C58EA7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3EFDE9390542542504F8EA5D /* Pods-Bootstrap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootstrap.release.xcconfig"; path = "Target Support Files/Pods-Bootstrap/Pods-Bootstrap.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,8 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16AD60022DF38BE00C58EA7 /* BootstrapShared.framework in Frameworks */,
 				B16AD5FB22DF37BA00C58EA7 /* BootstrapCore.framework in Frameworks */,
-				B16AD5FD22DF37BA00C58EA7 /* BootstrapShared.framework in Frameworks */,
 				2544AF0A8A772A297FDE82F3 /* Pods_Bootstrap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,7 +181,6 @@
 				B16860CE22C1F39B0059434A /* Frameworks */,
 				B16860CF22C1F39B0059434A /* Resources */,
 				E34F48DB838A2B75F1FBAEB6 /* [CP] Embed Pods Frameworks */,
-				B16AD5F122DF352E00C58EA7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -14,6 +14,7 @@
 		B16AD5C022CF8DDD00C58EA7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD5BF22CF8DDD00C58EA7 /* Environment.swift */; };
 		B16AD5C222CF915200C58EA7 /* WebEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD5C122CF915200C58EA7 /* WebEnvironment.swift */; };
 		B16AD5C422CF91BD00C58EA7 /* CoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD5C322CF91BD00C58EA7 /* CoreConstants.swift */; };
+		B16AD60522DF38FE00C58EA7 /* BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD60422DF38FE00C58EA7 /* BootstrapShared.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B16AD5BF22CF8DDD00C58EA7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B16AD5C122CF915200C58EA7 /* WebEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebEnvironment.swift; sourceTree = "<group>"; };
 		B16AD5C322CF91BD00C58EA7 /* CoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreConstants.swift; sourceTree = "<group>"; };
+		B16AD60422DF38FE00C58EA7 /* BootstrapShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16AD60522DF38FE00C58EA7 /* BootstrapShared.framework in Frameworks */,
 				6D4BBCDC151B731823C1C18A /* Pods_BootstrapCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +58,7 @@
 		4C6C1DE3C1A9D8DA388C3ADD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B16AD60422DF38FE00C58EA7 /* BootstrapShared.framework */,
 				249CA11FC5F40EC5735E5EF2 /* Pods_BootstrapCore.framework */,
 			);
 			name = Frameworks;
