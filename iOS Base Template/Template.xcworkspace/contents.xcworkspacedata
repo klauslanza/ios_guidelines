@@ -5,6 +5,12 @@
       location = "group:Template.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:TemplateCore/TemplateCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TemplateShared/TemplateShared.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

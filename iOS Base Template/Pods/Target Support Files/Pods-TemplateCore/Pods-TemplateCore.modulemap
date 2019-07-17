@@ -1,0 +1,6 @@
+framework module Pods_TemplateCore {
+  umbrella header "Pods-TemplateCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

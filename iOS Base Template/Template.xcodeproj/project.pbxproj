@@ -18,7 +18,26 @@
 		B16860F122C1FB1D0059434A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860DD22C1F39E0059434A /* LaunchScreen.storyboard */; };
 		B16860F222C1FB1D0059434A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16860DB22C1F39E0059434A /* Assets.xcassets */; };
 		B16860F322C1FB1D0059434A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860D822C1F39B0059434A /* Main.storyboard */; };
+		B16AD5C722CF97A700C58EA7 /* TemplateCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5C522CF977600C58EA7 /* TemplateCore.framework */; };
+		B16AD5C822CF97A700C58EA7 /* TemplateCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5C522CF977600C58EA7 /* TemplateCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B16AD5E522CF991B00C58EA7 /* TemplateShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5E322CF991100C58EA7 /* TemplateShared.framework */; };
+		B16AD5E622CF991B00C58EA7 /* TemplateShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5E322CF991100C58EA7 /* TemplateShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B16AD5C922CF97A700C58EA7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B16AD5C822CF97A700C58EA7 /* TemplateCore.framework in Embed Frameworks */,
+				B16AD5E622CF991B00C58EA7 /* TemplateShared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D5BF537851063AF9B936089 /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
@@ -32,6 +51,8 @@
 		B16860E022C1F39E0059434A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B16860F822C1FB1D0059434A /* Template Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Template Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16860FC22C1FCC40059434A /* Stage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Stage-Info.plist"; sourceTree = "<group>"; };
+		B16AD5C522CF977600C58EA7 /* TemplateCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TemplateCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16AD5E322CF991100C58EA7 /* TemplateShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TemplateShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39654042333EF97986FE90A /* Pods-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.debug.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16AD5E522CF991B00C58EA7 /* TemplateShared.framework in Frameworks */,
+				B16AD5C722CF97A700C58EA7 /* TemplateCore.framework in Frameworks */,
 				93D675ABE18B351E56F417DA /* Pods_Template.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +138,8 @@
 		CE2A457BF54DD11CB284211C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B16AD5E322CF991100C58EA7 /* TemplateShared.framework */,
+				B16AD5C522CF977600C58EA7 /* TemplateCore.framework */,
 				9C6DA1E0B61F41621AEDB9DE /* Pods_Template.framework */,
 			);
 			name = Frameworks;
@@ -133,6 +158,7 @@
 				B16860CE22C1F39B0059434A /* Frameworks */,
 				B16860CF22C1F39B0059434A /* Resources */,
 				E34F48DB838A2B75F1FBAEB6 /* [CP] Embed Pods Frameworks */,
+				B16AD5C922CF97A700C58EA7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
