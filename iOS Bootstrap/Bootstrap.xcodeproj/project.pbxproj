@@ -21,6 +21,7 @@
 		B16860F322C1FB1D0059434A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16860D822C1F39B0059434A /* Main.storyboard */; };
 		B16AD5FB22DF37BA00C58EA7 /* BootstrapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5FA22DF37BA00C58EA7 /* BootstrapCore.framework */; };
 		B16AD60022DF38BE00C58EA7 /* BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD5FC22DF37BA00C58EA7 /* BootstrapShared.framework */; };
+		B16AD61F22DF75E500C58EA7 /* BootstrapDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD61E22DF75E500C58EA7 /* BootstrapDomain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B16860FC22C1FCC40059434A /* Stage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Stage-Info.plist"; sourceTree = "<group>"; };
 		B16AD5FA22DF37BA00C58EA7 /* BootstrapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16AD5FC22DF37BA00C58EA7 /* BootstrapShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16AD61E22DF75E500C58EA7 /* BootstrapDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C102510776A3C6F5EBA39678 /* Pods-Bootstrap Stage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootstrap Stage.debug.xcconfig"; path = "Target Support Files/Pods-Bootstrap Stage/Pods-Bootstrap Stage.debug.xcconfig"; sourceTree = "<group>"; };
 		E35188EEAC3C247C79F137AF /* Pods_Bootstrap_Stage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bootstrap_Stage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16AD61F22DF75E500C58EA7 /* BootstrapDomain.framework in Frameworks */,
 				B16AD60022DF38BE00C58EA7 /* BootstrapShared.framework in Frameworks */,
 				B16AD5FB22DF37BA00C58EA7 /* BootstrapCore.framework in Frameworks */,
 				2544AF0A8A772A297FDE82F3 /* Pods_Bootstrap.framework in Frameworks */,
@@ -160,6 +163,7 @@
 		CE2A457BF54DD11CB284211C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B16AD61E22DF75E500C58EA7 /* BootstrapDomain.framework */,
 				B16AD5FA22DF37BA00C58EA7 /* BootstrapCore.framework */,
 				B16AD5FC22DF37BA00C58EA7 /* BootstrapShared.framework */,
 				920AD832228F92DAA532A5DE /* Pods_Bootstrap.framework */,

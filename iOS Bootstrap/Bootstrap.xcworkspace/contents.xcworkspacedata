@@ -8,6 +8,9 @@
       location = "group:BootstrapCore/BootstrapCore.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:BootstrapDomain/BootstrapDomain.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BootstrapShared/BootstrapShared.xcodeproj">
    </FileRef>
    <FileRef
