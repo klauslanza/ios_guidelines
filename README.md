@@ -3,9 +3,26 @@ Guidelines, best practices and code style conventions.
 Includes a project for bootstrapping a standardized new iOS project.
 
 
+## Best practices
+
+1. Try to keep the warning count to 0. This includes also SwiftLint rules violations.
+2. Keep all hard coded strings in `CoreCostants.swift` (API paths, notification names, base prefixes, URLs, etc.)
+3. No storyboards.
+4. Keep libraries count low.
+
+
+## Code style
+
+1. Prefer using the `var aString = String.empty` than `var aString = ""`; in case, it's easier to find and replace them later.
+
+
+# Bootstrap project documentation
+
 ## Setup and maintenance
 
+
 ### Bundler
+
 Use  `bundle install` to get required dependencies.
 
 From now on you should use 
@@ -13,7 +30,9 @@ From now on you should use
 
 
 ### CocoaPods
+
 Use only strictly necessary pods. Try to limit the scope of the imported pods, preferring single use ones to kitchen sink mega libraries. Keep an annotation on pods used in specific frameworks, to track the usage.
+
 
 
 ## Architecture
@@ -25,10 +44,10 @@ contains all controllers and the business logic. Place all resources (image, aud
 
 **Frameworks**:
 
-1. *BootstrapCore*: services and providers for the services. Examples: data storage, networking, notifications, etc.)
-2. *BootstrapDomain*: models, extensions and model related files. This framework stores all the domain specific information; usually does not need other frameworks as dependencies. Examples: domain classes, payloads, protocols, responses, themes, domain validators, etc.
-3. *BootstrapShared*: generic extensions, functions and utilities. Ideally this represent a generic framework, not specific to the domain, that can be moved to another project and used as is. Examples: operation management, delegation, logging, observation, validation, localization, errors management, etc. 
-4. *BootstrapUIKit*: presentations related files. Contains the navigation, modal presentation, views, cells, layout/sizing logic, collections and tables, HUD & alerts, base controller classes, etc.
+1. *BootstrapCore*: data read/write services and providers. Usually depend from Shared and Domain. Examples: data storage, networking, notifications, etc.)
+2. *BootstrapDomain*: entities, relations, extensions and model related files. This framework stores the domain model of the project. Usually does not depend from other frameworks. Examples: domain classes, payloads, protocols, responses, themes, domain validators, etc.
+3. *BootstrapShared*: generic extensions, functions and utilities. Ideally this represent a generic framework, not specific to the domain, that can be moved to another project and used as is. Usually does not depend from other frameworks. Examples: operation management, delegation, logging, observation, validation, localization, errors management, etc. 
+4. *BootstrapUIKit*: all UI related stuff. Contains the navigation & presentation, views, cells, layout/sizing logic, collections and tables, HUD & alerts, base controller classes, etc. Usually depend from Shared and Domain. 
 
 
 ### Environment
