@@ -16,6 +16,10 @@
 		B16AD5C422CF91BD00C58EA7 /* CoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD5C322CF91BD00C58EA7 /* CoreConstants.swift */; };
 		B16AD60522DF38FE00C58EA7 /* BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD60422DF38FE00C58EA7 /* BootstrapShared.framework */; };
 		B16AD62322DF770B00C58EA7 /* BootstrapDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16AD62222DF770B00C58EA7 /* BootstrapDomain.framework */; };
+		B16AD62722E5BE4C00C58EA7 /* RegistryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD62622E5BE4C00C58EA7 /* RegistryService.swift */; };
+		B16AD62A22E5C00F00C58EA7 /* UserDefaultsRegistryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD62922E5C00F00C58EA7 /* UserDefaultsRegistryService.swift */; };
+		B16AD62C22E5C0F600C58EA7 /* KeychainRegistryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD62B22E5C0F600C58EA7 /* KeychainRegistryService.swift */; };
+		B16AD62E22E5C28700C58EA7 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD62D22E5C28700C58EA7 /* Core.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		B16AD5C322CF91BD00C58EA7 /* CoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreConstants.swift; sourceTree = "<group>"; };
 		B16AD60422DF38FE00C58EA7 /* BootstrapShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16AD62222DF770B00C58EA7 /* BootstrapDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16AD62622E5BE4C00C58EA7 /* RegistryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistryService.swift; sourceTree = "<group>"; };
+		B16AD62922E5C00F00C58EA7 /* UserDefaultsRegistryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRegistryService.swift; sourceTree = "<group>"; };
+		B16AD62B22E5C0F600C58EA7 /* KeychainRegistryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainRegistryService.swift; sourceTree = "<group>"; };
+		B16AD62D22E5C28700C58EA7 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,9 @@
 		B13A399522C20AD80032F8AE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B13A399622C20B160032F8AE /* Common */,
 				B13A399822C20B300032F8AE /* Providers */,
 				B13A399722C20B1F0032F8AE /* Services */,
-				B13A399622C20B160032F8AE /* Common */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -111,6 +119,8 @@
 			children = (
 				B16AD5BE22CF8DD000C58EA7 /* Environment */,
 				B16AD5B922CF8BA600C58EA7 /* Container */,
+				B16AD62D22E5C28700C58EA7 /* Core.swift */,
+				B16AD5C322CF91BD00C58EA7 /* CoreConstants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -125,6 +135,7 @@
 		B13A399822C20B300032F8AE /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				B16AD62522E5BE3B00C58EA7 /* Registry */,
 				B13A399922C20B340032F8AE /* Networking */,
 			);
 			path = Providers;
@@ -149,11 +160,28 @@
 		B16AD5BE22CF8DD000C58EA7 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				B16AD5C322CF91BD00C58EA7 /* CoreConstants.swift */,
 				B16AD5BF22CF8DDD00C58EA7 /* Environment.swift */,
 				B16AD5C122CF915200C58EA7 /* WebEnvironment.swift */,
 			);
 			path = Environment;
+			sourceTree = "<group>";
+		};
+		B16AD62522E5BE3B00C58EA7 /* Registry */ = {
+			isa = PBXGroup;
+			children = (
+				B16AD62822E5BFF900C58EA7 /* Registries */,
+				B16AD62622E5BE4C00C58EA7 /* RegistryService.swift */,
+			);
+			path = Registry;
+			sourceTree = "<group>";
+		};
+		B16AD62822E5BFF900C58EA7 /* Registries */ = {
+			isa = PBXGroup;
+			children = (
+				B16AD62922E5C00F00C58EA7 /* UserDefaultsRegistryService.swift */,
+				B16AD62B22E5C0F600C58EA7 /* KeychainRegistryService.swift */,
+			);
+			path = Registries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16AD62E22E5C28700C58EA7 /* Core.swift in Sources */,
+				B16AD62A22E5C00F00C58EA7 /* UserDefaultsRegistryService.swift in Sources */,
 				B16AD5C422CF91BD00C58EA7 /* CoreConstants.swift in Sources */,
 				B16AD5BB22CF8BC000C58EA7 /* Container.swift in Sources */,
+				B16AD62722E5BE4C00C58EA7 /* RegistryService.swift in Sources */,
 				B16AD5C022CF8DDD00C58EA7 /* Environment.swift in Sources */,
 				B16AD5C222CF915200C58EA7 /* WebEnvironment.swift in Sources */,
+				B16AD62C22E5C0F600C58EA7 /* KeychainRegistryService.swift in Sources */,
 				B16AD5BD22CF8C0400C58EA7 /* ComponentContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

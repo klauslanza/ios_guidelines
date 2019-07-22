@@ -11,6 +11,10 @@ import Foundation
 /// Centralized location for all strings, anything hardcoded belongs here.
 public enum CoreConstants {
     
+    public enum Components {
+        static let UserDefaultsRegistry = "Core.UserDefaultsRegistry"
+    }
+    
     /// All endpoints used by the app, based on current environment
     enum Endpoint {
         // APP
@@ -25,9 +29,9 @@ public enum CoreConstants {
     }
     
     /// Keys for keychain access
-    public enum Registry {
-        static let Credential  = "Bootstrap.Registry.Credential"
-        static let User        = "Bootstrap.Registry.User"
+    public enum Registry: String {
+        case credential  = "Bootstrap.Registry.Credential"
+        case user        = "Bootstrap.Registry.User"
     }
     
     /// Urls used in `WebEnvironment`

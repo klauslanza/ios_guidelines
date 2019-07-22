@@ -11,10 +11,20 @@ import BootstrapCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
+    
+    // MARK: Architecture setup
     let container: Container = ComponentContainer()
-
+    // Configure core based on target configurations
+    #if BOOTSTRAP_STAGE
+    lazy var core = Core(container: container, environment: Environment.stage)
+    #elseif DEBUG
+    lazy var core = Core(container: container, environment: Environment.prod)
+    #else
+    lazy var core = Core(container: container, environment: Environment.prod)
+    #endif
+    
+    // MARK: App lifecycle
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

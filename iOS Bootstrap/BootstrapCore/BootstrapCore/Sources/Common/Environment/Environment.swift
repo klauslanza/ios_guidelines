@@ -63,7 +63,7 @@ private extension Environment {
         headers["Content-Type"] = "application/json"
         headers["Accept"] = "application/json"
         headers["accept-encoding"] = "gzip"
-//        headers["user-language"] = NSLocale.current.languageCode //?? String.empty
+        headers["user-language"] = NSLocale.current.languageCode //?? String.empty
         return headers
     }()
 }
