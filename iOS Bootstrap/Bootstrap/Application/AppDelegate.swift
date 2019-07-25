@@ -8,6 +8,7 @@
 
 import UIKit
 import BootstrapCore
+import BootstrapUIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Architecture setup
     let container: Container = ComponentContainer()
+    let navigator: Navigator = StandardNavigator()
     // Configure core based on target configurations
     #if BOOTSTRAP_STAGE
     lazy var core = Core(container: container, environment: Environment.stage)
@@ -26,7 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: App lifecycle
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Setup navigation context, added to dependency container
+        let context = Context(core: core, navigator: navigator)
+        container.register(type: Context.self, instance: context)
+        // Launch first screen
+        context.navigator.start(coordinator: MainCoordinator(context: context))
+
         return true
     }
 

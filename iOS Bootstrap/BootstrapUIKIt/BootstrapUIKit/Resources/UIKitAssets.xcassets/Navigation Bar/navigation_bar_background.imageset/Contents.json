@@ -2,11 +2,25 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "navigation_bar_background.pdf"
+      "filename" : "navigation_bar_background.pdf",
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1
+        },
+        "cap-insets" : {
+          "right" : 160,
+          "left" : 159
+        }
+      }
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

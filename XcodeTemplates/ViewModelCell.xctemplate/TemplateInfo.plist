@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>MyScene</string>
+	<key>Description</key>
+	<string>Generates a new ViewModel-Cell</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+
+		<!-- Name -->
+		<dict>
+			<key>Default</key>
+			<string>Name</string>
+			<key>Description</key>
+			<string>The cell name</string>
+			<key>Identifier</key>
+			<string>SceneName</string>
+			<key>Name</key>
+			<string>Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+
+		<!-- HIDDEN Product name -->
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_SceneName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		
+		<!-- Label ## ViewModel -->
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_SceneName___ViewModel.swift</string>
+			<key>Description</key>
+			<string>The ViewModel name</string>
+			<key>Identifier</key>
+			<string>ViewModelName</string>
+			<key>Name</key>
+			<string>ViewModel:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+
+		<!-- Label ## Cell class -->
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_SceneName:identifier___CollectionViewCell.swift</string>
+			<key>Description</key>
+			<string>The cell class name</string>
+			<key>Identifier</key>
+			<string>CellClass</string>
+			<key>Name</key>
+			<string>Cell class:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+
+		<!-- Label ## Delegate -->
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_SceneName:identifier___CollectionViewCell.xib</string>
+			<key>Description</key>
+			<string>The cell xib</string>
+			<key>Identifier</key>
+			<string>CellXib</string>
+			<key>Name</key>
+			<string>Cell xib:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>7</string>
+	<key>Summary</key>
+	<string>Generates a new ViewModel-Cell</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+</dict>
+</plist>

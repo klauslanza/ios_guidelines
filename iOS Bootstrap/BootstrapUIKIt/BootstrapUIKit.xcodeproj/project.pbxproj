@@ -24,6 +24,8 @@
 		B173352122E6111500B17640 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B173351C22E6111500B17640 /* Montserrat-Medium.ttf */; };
 		B173352322E6133E00B17640 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173352222E6133E00B17640 /* Context.swift */; };
 		B173352A22E6150400B17640 /* BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B173352922E6150400B17640 /* BootstrapShared.framework */; };
+		B1F62EF022E9F349000AD408 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62EEF22E9F349000AD408 /* Navigator.swift */; };
+		B1F62EF222E9F5C4000AD408 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62EF122E9F5C4000AD408 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		B173351C22E6111500B17640 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		B173352222E6133E00B17640 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		B173352922E6150400B17640 /* BootstrapShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F62EEF22E9F349000AD408 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Navigator.swift; path = ../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Navigation/Navigator.swift; sourceTree = "<group>"; };
+		B1F62EF122E9F5C4000AD408 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = ../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Extensions/UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			children = (
 				B17334F222E608AA00B17640 /* Coordinator */,
 				B173352222E6133E00B17640 /* Context.swift */,
+				B1F62EEF22E9F349000AD408 /* Navigator.swift */,
 				B173351322E60F2E00B17640 /* StandardNavigator.swift */,
 			);
 			path = Navigation;
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				B173351122E60E6400B17640 /* Bundle.swift */,
+				B1F62EF122E9F5C4000AD408 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B173350522E60C8200B17640 /* VoidCoordinator.swift in Sources */,
+				B1F62EF022E9F349000AD408 /* Navigator.swift in Sources */,
 				B173351222E60E6400B17640 /* Bundle.swift in Sources */,
+				B1F62EF222E9F5C4000AD408 /* UIViewController.swift in Sources */,
 				B173350722E60C8B00B17640 /* BaseCoordinator.swift in Sources */,
 				B173350F22E60DF400B17640 /* FontLayout.swift in Sources */,
 				B173350A22E60D0700B17640 /* BaseViewController.swift in Sources */,

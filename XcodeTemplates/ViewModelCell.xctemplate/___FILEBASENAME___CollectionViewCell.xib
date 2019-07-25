@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="___FILEBASENAMEASIDENTIFIER___" customModule="___PROJECTNAME___" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcU-oL-y7e" userLabel="container">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tcU-oL-y7e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AdE-Zf-HSZ"/>
+                <constraint firstAttribute="bottom" secondItem="tcU-oL-y7e" secondAttribute="bottom" id="HAw-S7-qRl"/>
+                <constraint firstAttribute="trailing" secondItem="tcU-oL-y7e" secondAttribute="trailing" id="VpC-dm-bFw"/>
+                <constraint firstItem="tcU-oL-y7e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qs7-KM-hzQ"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="tcU-oL-y7e" id="TiY-dd-Pf2"/>
+                <outlet property="containerViewBottomLayoutConstraint" destination="HAw-S7-qRl" id="PTA-lw-DPU"/>
+                <outlet property="containerViewLeadingLayoutConstraint" destination="AdE-Zf-HSZ" id="9MX-dP-h0A"/>
+                <outlet property="containerViewTopLayoutConstraint" destination="qs7-KM-hzQ" id="h7x-Nq-kNk"/>
+                <outlet property="containerViewTrailingLayoutConstraint" destination="VpC-dm-bFw" id="Tvv-tC-Vm2"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
