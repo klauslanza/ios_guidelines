@@ -10,6 +10,7 @@
 		0F428D8EB945D430C0C543BE /* Pods_BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF0E362859EF1DABEB8615 /* Pods_BootstrapShared.framework */; };
 		B16AD5D922CF985A00C58EA7 /* BootstrapShared.h in Headers */ = {isa = PBXBuildFile; fileRef = B16AD5D722CF985A00C58EA7 /* BootstrapShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B16AD5E222CF988D00C58EA7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD5E122CF988D00C58EA7 /* String.swift */; };
+		B173352722E614B900B17640 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173352622E614B900B17640 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		B16AD5D722CF985A00C58EA7 /* BootstrapShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BootstrapShared.h; sourceTree = "<group>"; };
 		B16AD5D822CF985A00C58EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B16AD5E122CF988D00C58EA7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B173352622E614B900B17640 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		B2FF0E362859EF1DABEB8615 /* Pods_BootstrapShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BootstrapShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B958E446D5A1CA7FC1414B86 /* Pods-BootstrapShared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootstrapShared.release.xcconfig"; path = "Target Support Files/Pods-BootstrapShared/Pods-BootstrapShared.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B16AD5E022CF987D00C58EA7 /* Extensions */,
+				B173352522E614AD00B17640 /* Logging */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -84,6 +87,14 @@
 				B16AD5E122CF988D00C58EA7 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B173352522E614AD00B17640 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				B173352622E614B900B17640 /* Logger.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 		E7ABA85D4B05363441F93DE6 /* Pods */ = {
@@ -150,6 +161,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B16AD5CA22CF985A00C58EA7;
 			productRefGroup = B16AD5D522CF985A00C58EA7 /* Products */;
@@ -202,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16AD5E222CF988D00C58EA7 /* String.swift in Sources */,
+				B173352722E614B900B17640 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

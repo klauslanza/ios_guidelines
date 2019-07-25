@@ -8,6 +8,9 @@
       location = "group:BootstrapCore/BootstrapCore.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:/Users/kappa/Developer/ios_guidelines/iOS Bootstrap/BootstrapUIKIt/BootstrapUIKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BootstrapDomain/BootstrapDomain.xcodeproj">
    </FileRef>
    <FileRef
@@ -15,5 +18,8 @@
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BootstrapUIKit/BootstrapUIKit.xcodeproj">
    </FileRef>
 </Workspace>

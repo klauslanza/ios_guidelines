@@ -8,6 +8,7 @@ workspace 'Bootstrap.xcworkspace'
 project 'Bootstrap.xcodeproj'
 project 'BootstrapCore/BootstrapCore.xcodeproj'
 project 'BootstrapShared/BootstrapShared.xcodeproj'
+project 'BootstrapUIKit/BootstrapUIKit.xcodeproj'
 
 def common_pods
   # Main
@@ -23,12 +24,14 @@ end
 target 'Bootstrap' do
   inherit! :search_paths
   project 'Bootstrap.xcodeproj'
+  
   common_pods
 end
 
 target 'Bootstrap Stage' do
   inherit! :search_paths
   project 'Bootstrap.xcodeproj'
+  
   common_pods
 end
 
@@ -38,7 +41,19 @@ end
 target 'BootstrapCore' do
   inherit! :search_paths
   project 'BootstrapCore/BootstrapCore.xcodeproj'
-  common_pods
+  
+  pod 'DeviceKit'
+  pod 'KeychainAccess'
+end
+
+# --------------
+# BootstrapUIKit
+# --------------
+target 'BootstrapUIKit' do
+  inherit! :search_paths
+  project 'BootstrapUIKit/BootstrapUIKit.xcodeproj'
+  
+  pod 'Kingfisher'
 end
 
 # --------------
@@ -47,5 +62,6 @@ end
 target 'BootstrapShared' do
   inherit! :search_paths
   project 'BootstrapShared/BootstrapShared.xcodeproj'
-  common_pods
+  
+  pod 'KeychainAccess'
 end
