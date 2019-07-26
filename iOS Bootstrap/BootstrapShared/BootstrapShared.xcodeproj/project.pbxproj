@@ -11,6 +11,8 @@
 		B16AD5D922CF985A00C58EA7 /* BootstrapShared.h in Headers */ = {isa = PBXBuildFile; fileRef = B16AD5D722CF985A00C58EA7 /* BootstrapShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B16AD5E222CF988D00C58EA7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AD5E122CF988D00C58EA7 /* String.swift */; };
 		B173352722E614B900B17640 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173352622E614B900B17640 /* Logger.swift */; };
+		B1F62F0F22EB3726000AD408 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62F0E22EB3726000AD408 /* UIViewController.swift */; };
+		B1F62F1622EB39FF000AD408 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62F1522EB39FF000AD408 /* UINavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		B16AD5D822CF985A00C58EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B16AD5E122CF988D00C58EA7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B173352622E614B900B17640 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B1F62F0E22EB3726000AD408 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		B1F62F1522EB39FF000AD408 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		B2FF0E362859EF1DABEB8615 /* Pods_BootstrapShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BootstrapShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B958E446D5A1CA7FC1414B86 /* Pods-BootstrapShared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootstrapShared.release.xcconfig"; path = "Target Support Files/Pods-BootstrapShared/Pods-BootstrapShared.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				B16AD5E122CF988D00C58EA7 /* String.swift */,
+				B1F62F1522EB39FF000AD408 /* UINavigationController.swift */,
+				B1F62F0E22EB3726000AD408 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,7 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16AD5E222CF988D00C58EA7 /* String.swift in Sources */,
+				B1F62F1622EB39FF000AD408 /* UINavigationController.swift in Sources */,
 				B173352722E614B900B17640 /* Logger.swift in Sources */,
+				B1F62F0F22EB3726000AD408 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

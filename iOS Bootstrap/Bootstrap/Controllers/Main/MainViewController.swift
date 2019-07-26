@@ -18,13 +18,24 @@ final class MainViewController: BaseViewController<MainViewControllerDelegate> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
-        configureSource()
+        view.backgroundColor = .lightGray
+        configureView()
     }
 }
 
-extension MainViewController {
-    private func configureSource() {
-    	
+private extension MainViewController {
+    private func configureView() {
+    	let button = UIButton(type: .custom)
+        button.setTitle("DETAIL", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(button)
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+    }
+    
+    @objc
+    func tappedButton() {
+        coordinator.goToDetail()
     }
 }

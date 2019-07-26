@@ -26,6 +26,12 @@
 		B173352A22E6150400B17640 /* BootstrapShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B173352922E6150400B17640 /* BootstrapShared.framework */; };
 		B1F62EF022E9F349000AD408 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62EEF22E9F349000AD408 /* Navigator.swift */; };
 		B1F62EF222E9F5C4000AD408 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62EF122E9F5C4000AD408 /* UIViewController.swift */; };
+		B1F62EFF22EAF44D000AD408 /* BootstrapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F62EFE22EAF44D000AD408 /* BootstrapCore.framework */; };
+		B1F62F0622EB3122000AD408 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62F0522EB3122000AD408 /* Presenter.swift */; };
+		B1F62F0B22EB31BC000AD408 /* PresenterModalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62F0A22EB31BC000AD408 /* PresenterModalConfiguration.swift */; };
+		B1F62F0D22EB321F000AD408 /* PresenterFullscreenConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62F0C22EB321F000AD408 /* PresenterFullscreenConfiguration.swift */; };
+		B1F62F1222EB3805000AD408 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62F1122EB3805000AD408 /* FadeTransition.swift */; };
+		B1F62F1422EB3982000AD408 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F62F1322EB3982000AD408 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		B173352922E6150400B17640 /* BootstrapShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F62EEF22E9F349000AD408 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Navigator.swift; path = ../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Navigation/Navigator.swift; sourceTree = "<group>"; };
 		B1F62EF122E9F5C4000AD408 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = ../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Extensions/UIViewController.swift; sourceTree = "<group>"; };
+		B1F62EFE22EAF44D000AD408 /* BootstrapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BootstrapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F62F0522EB3122000AD408 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		B1F62F0A22EB31BC000AD408 /* PresenterModalConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PresenterModalConfiguration.swift; path = ../../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Navigation/Presenter/PresenterModalConfiguration.swift; sourceTree = "<group>"; };
+		B1F62F0C22EB321F000AD408 /* PresenterFullscreenConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PresenterFullscreenConfiguration.swift; path = ../../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Navigation/Presenter/PresenterFullscreenConfiguration.swift; sourceTree = "<group>"; };
+		B1F62F1122EB3805000AD408 /* FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = ../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Transitions/FadeTransition.swift; sourceTree = "<group>"; };
+		B1F62F1322EB3982000AD408 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = ../../../../BootstrapUIKIt/BootstrapUIKit/Sources/Extensions/UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F62EFF22EAF44D000AD408 /* BootstrapCore.framework in Frameworks */,
 				B173352A22E6150400B17640 /* BootstrapShared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +108,7 @@
 		B17334F022E6089B00B17640 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B1F62F1022EB37F6000AD408 /* Transitions */,
 				B173350822E60CEE00B17640 /* Controllers */,
 				B173351022E60E5D00B17640 /* Extensions */,
 				B173350B22E60DAC00B17640 /* Layout */,
@@ -106,6 +120,7 @@
 		B17334F122E6089F00B17640 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				B1F62F0722EB315D000AD408 /* Presenter */,
 				B17334F222E608AA00B17640 /* Coordinator */,
 				B173352222E6133E00B17640 /* Context.swift */,
 				B1F62EEF22E9F349000AD408 /* Navigator.swift */,
@@ -146,6 +161,7 @@
 			children = (
 				B173351122E60E6400B17640 /* Bundle.swift */,
 				B1F62EF122E9F5C4000AD408 /* UIViewController.swift */,
+				B1F62F1322EB3982000AD408 /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,9 +182,28 @@
 		B173352822E6150400B17640 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1F62EFE22EAF44D000AD408 /* BootstrapCore.framework */,
 				B173352922E6150400B17640 /* BootstrapShared.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1F62F0722EB315D000AD408 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B1F62F0522EB3122000AD408 /* Presenter.swift */,
+				B1F62F0A22EB31BC000AD408 /* PresenterModalConfiguration.swift */,
+				B1F62F0C22EB321F000AD408 /* PresenterFullscreenConfiguration.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B1F62F1022EB37F6000AD408 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				B1F62F1122EB3805000AD408 /* FadeTransition.swift */,
+			);
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,12 +293,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B173350522E60C8200B17640 /* VoidCoordinator.swift in Sources */,
+				B1F62F1222EB3805000AD408 /* FadeTransition.swift in Sources */,
 				B1F62EF022E9F349000AD408 /* Navigator.swift in Sources */,
 				B173351222E60E6400B17640 /* Bundle.swift in Sources */,
 				B1F62EF222E9F5C4000AD408 /* UIViewController.swift in Sources */,
 				B173350722E60C8B00B17640 /* BaseCoordinator.swift in Sources */,
 				B173350F22E60DF400B17640 /* FontLayout.swift in Sources */,
+				B1F62F0622EB3122000AD408 /* Presenter.swift in Sources */,
 				B173350A22E60D0700B17640 /* BaseViewController.swift in Sources */,
+				B1F62F1422EB3982000AD408 /* UIImage.swift in Sources */,
+				B1F62F0D22EB321F000AD408 /* PresenterFullscreenConfiguration.swift in Sources */,
+				B1F62F0B22EB31BC000AD408 /* PresenterModalConfiguration.swift in Sources */,
 				B173350D22E60DBB00B17640 /* NavigationBarLayout.swift in Sources */,
 				B173352322E6133E00B17640 /* Context.swift in Sources */,
 				B173351422E60F2E00B17640 /* StandardNavigator.swift in Sources */,

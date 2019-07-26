@@ -1,8 +1,8 @@
 //
-//  MainViewControllerDelegate.swift
+//  DetailViewControllerDelegate.swift
 //  Bootstrap
 //
-//  Created by Klaus Lanzarini on 25/07/2019.
+//  Created by Klaus Lanzarini on 26/07/2019.
 //  Copyright (c) 2019 Klaus Lanzarini. All rights reserved.
 //
 
@@ -11,6 +11,5 @@ import BootstrapUIKit
 import BootstrapDomain
 import BootstrapShared
 
-protocol MainViewControllerDelegate: class {
-    func goToDetail()
+protocol DetailViewControllerDelegate: class {
 }

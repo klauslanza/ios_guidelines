@@ -17,5 +17,8 @@ final class MainCoordinator: VoidCoordinator<MainViewController> {
 
 // MARK: - MainViewControllerDelegate
 extension MainCoordinator: MainViewControllerDelegate {
-	
+    
+    func goToDetail() {
+        context.navigator.navigate(to: DetailCoordinator(context: context))
+    }
 }
